@@ -1,0 +1,16 @@
+:root{
+  --bg-primary: #03050e;
+  --bg-secondary:#080a14;
+  --bg-accent:#101530;
+  --bg-muted: #141414;
+  --foreground: #f7f7f8;
+  --muted-foreground: #7f8296;
+  --border-primary: #262626;
+  --border-secondary: #101530;
+  --gradient: linear-gradient(to top left,#0052D4,#4364F7,#6FB1FC);
+  --primary: #0024d6;
+  --primary-accent:#4364F7;
+  --destructive: #7f1d1d;
+  --warning:#ffa500;
+  --transition:all 400ms ease;
+}
