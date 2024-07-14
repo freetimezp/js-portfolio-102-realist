@@ -98,6 +98,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
 }
 
 .icon-wrapper {
@@ -140,6 +141,11 @@ img {
   line-clamp: 2;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.slick-prev,
+.slick-next {
+  display: none !important;
 }
 
 
