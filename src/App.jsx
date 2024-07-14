@@ -13,8 +13,8 @@ function App() {
   return (
     <>
       <Navbar />
-      {/* <Hero />
-      <About />
+      <Hero />
+      {/* <About />
       <Services />
       <Properties />
       <Agents />

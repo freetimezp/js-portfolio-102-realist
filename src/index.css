@@ -147,12 +147,14 @@ img {
 @media (max-width: 900px) {
   .heading-1 {
     font-size: 45px;
+    line-height: 50px;
   }
 }
 
 @media (max-width: 600px) {
   .heading-1 {
     font-size: 25px;
+    line-height: 30px;
   }
 }
 
