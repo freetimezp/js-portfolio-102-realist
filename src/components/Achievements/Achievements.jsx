@@ -21,7 +21,7 @@ const Achievements = () => {
 
     return (
         <div className="achievements-container">
-            <div className="card">
+            <div className="card" data-aos="fade-right" data-aos-delay="1200">
                 <div className="flex details">
                     <div className="flex-center icon-wrapper">
                         <FaUsersLine />
@@ -36,7 +36,7 @@ const Achievements = () => {
                 <small className="muted">Happy Customers</small>
             </div>
 
-            <div className="card">
+            <div className="card" data-aos="fade-right" data-aos-delay="800">
                 <div className="flex details">
                     <div className="flex-center icon-wrapper">
                         <FaBuilding />
@@ -51,7 +51,7 @@ const Achievements = () => {
                 <small className="muted">Properties</small>
             </div>
 
-            <div className="card">
+            <div className="card" data-aos="fade-right" data-aos-delay="400">
                 <div className="flex details">
                     <div className="flex-center icon-wrapper">
                         <FaAward />

@@ -24,38 +24,42 @@ const Clients = () => {
     return (
         <section id="clients">
             <div className="wrapper">
-                <h1 className="heading-1">
+                <h1 className="heading-1" data-aos="fade-left">
                     Clients <span className="gradient-text">Testimonies</span>
                 </h1>
 
-                <h3 className="sub-title">What our clients is saying</h3>
+                <h3 className="sub-title" data-aos="fade-left" data-aos-delay="400">
+                    What our clients is saying
+                </h3>
 
-                <Slider className='clients-container' ref={ref} {...settings}>
-                    {clients.map((list, index) => (
-                        <React.Fragment key={index}>
-                            <div className="flex">
-                                <div className="profile">
-                                    <img src={list.image} alt="profile" />
+                <div data-aos="fade-right">
+                    <Slider className='clients-container' ref={ref} {...settings}>
+                        {clients.map((list, index) => (
+                            <React.Fragment key={index}>
+                                <div className="flex">
+                                    <div className="profile">
+                                        <img src={list.image} alt="profile" />
+                                    </div>
+
+                                    <div className="details">
+                                        <h3 className="name">{list.name}</h3>
+                                        <small className="muted">CEO</small>
+                                    </div>
                                 </div>
 
-                                <div className="details">
-                                    <h3 className="name">{list.name}</h3>
-                                    <small className="muted">CEO</small>
+                                <p className="muted content">{list.review}</p>
+
+                                <div className="stars-container">
+                                    <FaStar />
+                                    <FaStar />
+                                    <FaStar />
+                                    <FaStar />
+                                    <FaStar />
                                 </div>
-                            </div>
-
-                            <p className="muted content">{list.review}</p>
-
-                            <div className="stars-container">
-                                <FaStar />
-                                <FaStar />
-                                <FaStar />
-                                <FaStar />
-                                <FaStar />
-                            </div>
-                        </React.Fragment>
-                    ))}
-                </Slider>
+                            </React.Fragment>
+                        ))}
+                    </Slider>
+                </div>
 
                 <div className="flex-center buttons-container">
                     <button className="btn flex-center" onClick={() => ref.current.slickPrev()}>

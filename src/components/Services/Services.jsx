@@ -7,13 +7,13 @@ const Services = () => {
     return (
         <section id="services">
             <div className="wrapper">
-                <h1 className="heading-1">
+                <h1 className="heading-1" data-aos="fade-right">
                     <span className="gradient-text">Services</span>
                 </h1>
 
                 <div className="services__container">
                     {services.map((service, index) => (
-                        <div key={index} className="service">
+                        <div key={index} className="service" data-aos="fade-left">
                             <div className="flex-center icon-wrapper">
                                 {service.icon}
                             </div>

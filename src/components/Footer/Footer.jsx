@@ -9,7 +9,7 @@ import { Link } from 'react-scroll';
 
 const Footer = () => {
     return (
-        <footer id="footer">
+        <footer id="footer" data-aos="zoom-out" data-aos-delay="500">
             <div className="wrapper">
                 <div className="contact-options">
                     {contactOptions.map((option, index) => (

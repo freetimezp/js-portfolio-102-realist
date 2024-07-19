@@ -7,13 +7,13 @@ const Properties = () => {
     return (
         <section id="properties">
             <div className="wrapper">
-                <h1 className="heading-1">
+                <h1 className="heading-1" data-aos="fade-right">
                     <span className="gradient-text">Featured Properties</span>
                 </h1>
 
                 <div className="properties__container">
                     {properties.map((property, index) => (
-                        <div key={index} className='property'>
+                        <div key={index} className='property' data-aos="fade-up" data-aos-delay={200 * (index + 1)}>
                             <div className="top picture">
                                 <img src={property.image} alt="property" />
                             </div>

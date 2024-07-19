@@ -2,7 +2,7 @@ import "./Contact.css";
 
 const Contact = () => {
     return (
-        <section id="contact">
+        <section id="contact" data-aos="zoom-in">
             <div className="wrapper">
                 <div className="contact-form">
                     <div className="top">
